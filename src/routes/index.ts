@@ -1,6 +1,6 @@
 import express from 'express';
-import config from '../config/env';
 import axios from 'axios';
+import config from '../config/env';
 import logger from '../config/logger';
 
 const router = express.Router();
@@ -38,7 +38,7 @@ router.get('/integration.json', (req, res) => {
 				{
 					label: 'forward-type',
 					type: 'dropdown',
-					options: ['error-tracing', 'speed-insights', 'session-replay'],
+					options: ['error-tracing', 'speed-monitoring', 'session-replay'],
 					default: 'error-tracing',
 					required: true,
 				},

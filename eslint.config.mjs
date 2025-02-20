@@ -1,6 +1,9 @@
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
